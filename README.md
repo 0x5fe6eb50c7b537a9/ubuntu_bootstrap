@@ -1,4 +1,4 @@
 ubuntu_bootstrap
 ================
 
-New computer Ubuntu bootstrap scripts
+New computer Ubuntu bootstrap scripts.  More to follow.
