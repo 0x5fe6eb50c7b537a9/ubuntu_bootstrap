@@ -1,0 +1,24 @@
+# from a clean Ubuntu 14.04+ install.
+sudo apt-get install dkms gcc build-essential linux-headers-generic linux-headers-`uname -r` linux-source
+sudo apt-get remove --purge nvidia*
+
+# driver manager > nvidia-331 (recommended) selection. apply. wait for completion.
+# terminal:
+sudo service mdm stop
+> tty1 $ login 
+sudo telinit 3
+sudo sh /../NVIDIA..run #downloaded location of x64 run script
+# follow procedure on clicks, will suck afterwards but will fix.
+sudo service mdm start
+# expect Xorg failure, Ctrl+Alt+delete restart
+
+
+# GRUB2 menu > 'e' on distro
+# append 'nomodeset' this one time only to boot
+# attempt to load session, will likely fail, but be in the right resolution
+# open terminal:
+sudo su
+nvidia-xconfig
+exit
+
+
