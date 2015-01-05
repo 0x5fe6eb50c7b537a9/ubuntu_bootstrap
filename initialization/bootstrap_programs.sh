@@ -21,6 +21,26 @@ apt-get install maven ant
 apt-get install mysql-client-5.6 mysql-server-5.6 mysql-common-5.6
 
 # outside: chrome, mysql workbench, Rstudio
+# chrome://flags/  > 'Override software rendering: Enable'
+
+#awscli
+wget https://bootstrap.pypa.io/ez_setup.py -O - | sudo python
+wget https://pypi.python.org/packages/source/a/awscli/awscli-1.6.10.tar.gz -P /tmp/
+tar -xvzf /tmp/awscli-1.6.10.tar.gz -C /tmp
+mv /tmp/awscli-1.6.10 /opt/awscli
+cd /opt/awscli/
+python setup.py install
+cd ~
+
+# aws elastic-mapreduce cli (ruby 2.0 dep)
+apt-get install ruby2.0
+mkdir /opt/elastic-mapreduce-cli
+wget http://elasticmapreduce.s3.amazonaws.com/elastic-mapreduce-ruby.zip -P /tmp/
+unzip /tmp/elastic-mapreduce-ruby.zip -d /opt/elastic-mapreduce-cli/
+# ToDo: add the /opt/elastic-mapreduce-cli/credentials.json
+cd ~
+
+
 
 
 
