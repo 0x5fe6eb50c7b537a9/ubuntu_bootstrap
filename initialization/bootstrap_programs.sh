@@ -40,7 +40,10 @@ unzip /tmp/elastic-mapreduce-ruby.zip -d /opt/elastic-mapreduce-cli/
 # ToDo: add the /opt/elastic-mapreduce-cli/credentials.json
 cd ~
 
-
+# R
+apt-key adv --keyserver keyserver.ubuntu.com --recv-keys E084DAB9
+apt-add-repository 'deb http://lib.stat.cmu.edu/R/CRAN/bin/linux/ubuntu trusty/'
+apt-get install r-base r-base-html r-doc-html r-doc-info r-doc-pdf r-mathlib tcl8.6 tk8.6 tcl-tclreadline
 
 
 
