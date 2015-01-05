@@ -21,4 +21,10 @@ sudo su
 nvidia-xconfig
 exit
 
+# install deps that would be required for access, keyrings, etc.
+sudo apt-get install git keepassx chrome
+sudo apt-get install chromium-browser chromium-browser-l10n
+
+# dont forget to disable the touchpad completely and use outside mouse
+
 
